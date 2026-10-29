@@ -1628,3 +1628,416 @@ button {
 .resume-actions .btn-outline:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+/* Add to the end of your existing style.css */
+
+.project-card,
+.profile-card {
+    background: #172033;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover,
+.profile-card:hover {
+    transform: translateY(-5px);
+    border-color: #60a5fa;
+}
+
+.project-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.project-card h3,
+.profile-card h3 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.project-card p,
+.profile-card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.project-tags span {
+    background: rgba(96, 165, 250, 0.12);
+    color: #93c5fd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.project-card a,
+.profile-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #60a5fa;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-card a:hover,
+.profile-card a:hover {
+    text-decoration: underline;
+}
+/* ==============================
+   PROJECT 04: PORTFOLIO ART
+================================ */
+.portfolio-art,
+.todo-art,
+.pricing-art,
+.weather-art,
+.ecommerce-art {
+  position: relative;
+  min-height: 190px;
+  overflow: hidden;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.portfolio-art {
+  background: linear-gradient(135deg, #fce7d8, #e5d9ff);
+}
+
+.portfolio-window {
+  width: 72%;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(43, 38, 92, 0.18);
+}
+
+.portfolio-window-header {
+  height: 24px;
+  background: #222a49;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+.portfolio-window-header span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fda4af;
+}
+
+.portfolio-window-header span:nth-child(2) {
+  background: #fcd34d;
+}
+
+.portfolio-window-header span:nth-child(3) {
+  background: #86efac;
+}
+
+.portfolio-window-content {
+  padding: 18px;
+}
+
+.portfolio-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6, #c4b5fd);
+  margin-bottom: 12px;
+}
+
+.portfolio-line {
+  height: 8px;
+  width: 85%;
+  border-radius: 10px;
+  background: #d9d7f4;
+  margin-bottom: 8px;
+}
+
+.portfolio-line.short {
+  width: 55%;
+  background: #eceaf8;
+}
+
+.portfolio-blocks {
+  display: flex;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.portfolio-blocks span {
+  flex: 1;
+  height: 30px;
+  border-radius: 5px;
+  background: #ede9fe;
+}
+
+/* ==============================
+   PROJECT 05: TO-DO LIST
+================================ */
+.todo-art {
+  background: linear-gradient(135deg, #dcd6ff, #b9a6f5);
+}
+
+.todo-window {
+  width: 68%;
+  padding: 16px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(43, 38, 92, 0.18);
+}
+
+.todo-heading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #252846;
+  margin-bottom: 12px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #eeeaf8;
+}
+
+.todo-check {
+  width: 13px;
+  height: 13px;
+  border: 1.5px solid #9b8adf;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.todo-item:first-of-type .todo-check {
+  background: #8b5cf6;
+}
+
+.todo-item > span:last-child {
+  width: 70%;
+  height: 6px;
+  background: #e4e0f2;
+  border-radius: 10px;
+}
+
+/* ==============================
+   PROJECT 06: PRICING CARDS
+================================ */
+.pricing-art {
+  background: linear-gradient(135deg, #e0e7ff, #c4b5fd);
+}
+
+.pricing-window {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 90%;
+}
+
+.pricing-plan {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 7px;
+  box-shadow: 0 7px 18px rgba(43, 38, 92, 0.1);
+}
+
+.pricing-plan.featured-plan {
+  border: 2px solid #8b5cf6;
+  transform: translateY(-7px);
+}
+
+.pricing-line {
+  width: 65%;
+  height: 6px;
+  border-radius: 5px;
+  background: #c4b5fd;
+  margin-bottom: 12px;
+}
+
+.pricing-price {
+  width: 80%;
+  height: 13px;
+  border-radius: 4px;
+  background: #343454;
+  margin-bottom: 14px;
+}
+
+.pricing-feature {
+  height: 5px;
+  width: 90%;
+  border-radius: 5px;
+  background: #e5e7eb;
+  margin: 8px 0;
+}
+
+/* ==============================
+   PROJECT 07: WEATHER DASHBOARD
+================================ */
+.weather-art {
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+}
+
+.weather-sun {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fde68a;
+  top: 38px;
+  left: 24%;
+  box-shadow: 0 0 30px rgba(253, 230, 138, 0.5);
+}
+
+.weather-cloud {
+  position: absolute;
+  width: 76px;
+  height: 28px;
+  background: #fff;
+  border-radius: 30px;
+  top: 75px;
+  left: 35%;
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.12);
+}
+
+.weather-cloud::before,
+.weather-cloud::after {
+  content: "";
+  position: absolute;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.weather-cloud::before {
+  width: 35px;
+  height: 35px;
+  left: 12px;
+  top: -17px;
+}
+
+.weather-cloud::after {
+  width: 27px;
+  height: 27px;
+  right: 12px;
+  top: -11px;
+}
+
+.weather-cloud-two {
+  top: 105px;
+  left: 55%;
+  transform: scale(0.65);
+  opacity: 0.75;
+}
+
+.weather-temperature {
+  position: absolute;
+  top: 32px;
+  right: 16%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ==============================
+   PROJECT 08: NOVACART
+================================ */
+.ecommerce-art {
+  background: linear-gradient(135deg, #c4b5fd, #ede9fe);
+}
+
+.shop-bag {
+  position: relative;
+  width: 100px;
+  height: 105px;
+  margin-top: 15px;
+}
+
+.shop-bag-handle {
+  position: absolute;
+  width: 36px;
+  height: 28px;
+  border: 5px solid #5b42c7;
+  border-bottom: 0;
+  border-radius: 15px 15px 0 0;
+  top: 0;
+  left: 32px;
+}
+
+.shop-bag-front {
+  position: absolute;
+  inset: 23px 0 0;
+  background: linear-gradient(135deg, #7657e8, #4f46e5);
+  border-radius: 8px 8px 13px 13px;
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.shop-product {
+  position: absolute;
+  width: 28px;
+  height: 34px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(43, 38, 92, 0.12);
+}
+
+.shop-product-one {
+  top: 42px;
+  left: 18%;
+  transform: rotate(-12deg);
+}
+
+.shop-product-two {
+  top: 90px;
+  right: 18%;
+  transform: rotate(12deg);
+}
+
+/* ==============================
+   ART CAPTIONS
+================================ */
+.project-art .art-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #51458b;
+}
+
+/* ==============================
+   RESPONSIVE PROJECT ART
+================================ */
+@media (max-width: 600px) {
+  .portfolio-art,
+  .todo-art,
+  .pricing-art,
+  .weather-art,
+  .ecommerce-art {
+    min-height: 170px;
+  }
+}
